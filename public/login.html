@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100" data-bs-theme="dark">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Login</title>
+	<!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fontaswesome -->
+    <link href="assets/fontawesome-free-6.5.1-web/css/fontawesome.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.5.1-web/css/brands.css" rel="stylesheet">
+    <link href="assets/fontawesome-free-6.5.1-web/css/solid.css" rel="stylesheet">
+</head>
+<style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+<body class="d-flex flex-column h-100">
+    <main role="main" class="flex-shrink-0 mt-5">
+        <div class="container-fluid">
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <div class="card-title text-center">
+                                <h1 class="h3"><i class="fa-solid fa-shield-cat" style="font-size: 1.5em;"></i> Mew Code</h1>
+                            </div>
+                            <div class="card-text mt-3">
+                                <form action="login.php" method="POST" enctype="multipart/form-data">
+                                    <div class="mb-3 form-floating">
+                                        <input type="text" class="form-control form-control-md" id="username" name = "username" placeholder="Username" required>
+                                        <label for="username">Username</label>
+                                    </div>
+                                    <div class="mb-3 form-floating">
+                                        <input type="password" class="form-control form-control-md" id="pass" name = "pass" placeholder="Password" required>
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <button class="btn btn-dark" id="login" name = "login" type="submit">Login</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">Developed by BonesFox64</span>
+        </div>
+    </footer>
+</body>
+</html>
