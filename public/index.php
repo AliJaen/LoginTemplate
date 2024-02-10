@@ -58,7 +58,105 @@ if (!isset($_SESSION['user'])) {
     <div class="container-fluid">
       <div class="row">
         <div class="col">
-          <h1 class="mt-2">Welcome</h1>
+          <h1 class="mt-2">Welcome <?php echo $_SESSION['user']; ?></h1>
+        </div>
+        <div class="row jsutify-content-start mt-3">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-md-10">
+                    <h2 class="h4 card-title">Results 1</h2>
+                    <div class="card-text">
+                      <h3 class="h5">Data DB</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-2 text-center">
+                    <h3 class="h3"><i class="fa-solid fa-check"></i></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-md-10">
+                    <h2 class="h4 card-title">Results 2</h2>
+                    <div class="card-text">
+                      <h3 class="h5">Data DB</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-2 text-center">
+                    <h3 class="h3"><i class="fa-solid fa-exclamation"></i></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row align-items-center">
+                  <div class="col-md-10">
+                    <h2 class="h4 card-title">Results 3</h2>
+                    <div class="card-text">
+                      <h3 class="h5">Data DB</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-2 text-center">
+                    <h3 class="h3"><i class="fa-solid fa-xmark"></i></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start mt-4">
+          <div class="col-md-2">
+              <div class="card" style="width: 18 rem;">
+                <div class="container-fluid" style="background-color: #48C9B0; color: #fff;">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h5 style="font-size: 3em;" id="currentDate"></h5>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h5 style="font-size: 2em;" id="currentMonth"></h5>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <h5 style="font-size: 1em;" id="currentDay"></h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="card-text">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th style="color: #48C9B0; font-size: .7em;">Sun</th>
+                                <th style="color: #48C9B0; font-size: .7em;">Mon</th>
+                                <th style="color: #48C9B0; font-size: .7em;">Tue</th>
+                                <th style="color: #48C9B0; font-size: .7em;">Wed</th>
+                                <th style="color: #48C9B0; font-size: .7em;">Thu</th>
+                                <th style="color: #48C9B0; font-size: .7em;">Fri</th>
+                                <th style="color: #48C9B0; font-size: .7em;">Sat</th>
+                              </tr>
+                            </thead>
+                            <tbody id="daysMonth"></tbody>
+                          </table>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -66,6 +164,7 @@ if (!isset($_SESSION['user'])) {
 
   <?php require_once 'templates/footer.php'; ?>
   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/calendar.js"></script>
 </body>
 
 </html>
